@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Demonstrates using a relative layout to create a form -->
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/blue"
+	android:padding="10dp">
+	<!-- android:padding is used as to fill the surrounding to the content -->
+	<!-- There are also other alignment with the content like margin, top, boarder... -->
+
+	<TextView android:id="@+id/label"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/input_label" />
+	<!-- The input window's label is assigned here by TextView -->
+
+	<EditText android:id="@+id/entry"
+	    android:inputType="text"
+	    android:hint="@string/input_hint"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:layout_below="@id/label" />
+	<!-- An EditText window is aligned below the @id/label. -->
+	<!-- To create an entry, the inputType must be clarified. -->
+	<!-- A hint can be also assigned into the EditText window. -->
+
+	<Button android:id="@+id/Cancel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/entry"
+		android:layout_alignParentRight="true"
+		android:layout_marginLeft="10dp"
+		android:text="@string/Cancel" />
+	<!-- The Cancel button's size will just fit the text and is aligned to the right side of the screen with margin of 10dp-->
+
+	<Button android:id="@+id/Confirm"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toLeftOf="@id/Cancel"
+		android:layout_alignTop="@id/Cancel"
+		android:text="@string/Confirm" />
+	<!-- The Confirm button's size will just fit the text and is aligned to the left of the Cancel button. And it will have the same top height with cancel button. -->
+
+</RelativeLayout>
+

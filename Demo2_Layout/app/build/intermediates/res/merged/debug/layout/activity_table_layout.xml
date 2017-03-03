@@ -1,0 +1,44 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:stretchColumns="1">
+	<!-- Table layout will align the layout components in lines and rows. The number of elements in rows and lines can be set into exact numbers or to be null but different rows -->
+	<!-- In this program, three rows are defined, and each row has  -->
+	<!-- android:stretchColumns="1" means the space will be filled by stretching the second column. -->
+	<TableRow>
+		<TextView android:text="@string/user"
+			android:textStyle="bold"
+			android:gravity="right"
+			android:padding="3dp" />
+			<!-- Columns will be aligned right justified -->
+			<!-- Pad the text as big as 3dp. -->
+
+		<EditText android:id="@+id/username"
+			android:inputType="text"
+			android:padding="3dp"
+			android:scrollHorizontally="true" />
+			<!-- scollHorizontally is to achieve scroll effect when long text input.  -->
+	</TableRow>
+
+	<TableRow>
+		<TextView android:text="@string/password"
+			android:textStyle="bold"
+			android:gravity="right"
+			android:padding="3dip" />
+
+		<EditText android:id="@+id/password"
+		    android:inputType="text"
+			android:password="true"
+			android:padding="3dp"
+			android:scrollHorizontally="true" />
+	</TableRow>
+
+	<TableRow android:gravity="right">
+		<Button android:id="@+id/cancel"
+			android:text="@string/cancel" />
+		<Button android:id="@+id/login"
+			android:text="@string/login" />
+		<!-- In the Tablelayout lots of elements can be created like TextView, EditText, Button... -->
+	</TableRow>
+	<!-- This is just an example now further activity is created, however with these same tricks, complex applications can be built. -->
+</TableLayout>

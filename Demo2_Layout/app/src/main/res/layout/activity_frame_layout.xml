@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@+id/frame"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<!-- In previous SDK edition, <FrameLayout/> is used as the container for images and texts. Now, merge is preferred to reduce the number of levels in view trees -->
+	<!-- The difference details can be referred to http://developer.android.com/resources/articles/layout-tricks-merge.html -->
+	
+	<ImageView android:contentDescription="@+id/photo"
+		android:src="@drawable/bg"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	<!-- Here the <ImageView/> define the picture.android:src means set image resource.-->
+</merge>
+

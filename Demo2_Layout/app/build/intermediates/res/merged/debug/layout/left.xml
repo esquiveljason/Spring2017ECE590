@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:id="@+id/left"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TextView android:id="@+id/view1"
+		android:background="@drawable/blue"
+		android:layout_width="fill_parent"
+		android:layout_height="40dp"
+		android:text="@string/G1O1" />
+	
+	<TextView android:id="@+id/view2"
+		android:background="@drawable/yellow"
+		android:layout_width="fill_parent"
+		android:layout_height="40dp"
+		android:layout_below="@id/view1"
+		android:text="@string/G1O2" />
+	
+	<!-- Some units like dp and sp will be presented in PPT to illustrate the units in Android system. -->
+	<!-- dp or DIP (device independent pixels) is preferred in Android Development to adopt different resolutions.-->
+	<!-- In relative layout, some functions like below, above can be used to define the relative positions. -->
+</RelativeLayout>

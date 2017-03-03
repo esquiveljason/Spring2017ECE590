@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">ece2161_4_layout</string>
+	<!-- In present SDK, all the strings used in .xml are suggested to stored separately in the strings.xml -->
+	<!-- However, some strings like activity title names or name can be directly modified in AndroidManifest.xml -->
+	
+	<!--  Strings used in main activity. -->
+	<string name="button0">RelativeLayout: Form1</string>
+	<string name="button1">Interactive Layout of Linear and Relative</string>
+	<string name="button2">TableLayout: Form2</string>
+	<string name="button3">FrameLayout:Pic of CL</string>
+
+	
+	<!-- Strings used in interactive layout -->
+	<string name="G1O1">Group1\nObject 1</string>
+	<string name="G1O2">Group1\nObject 2</string>
+	<string name="G2O1">Group2 Object 1</string>
+	<string name="G2O2">Group2 Object 2</string>
+	
+	<!-- Strings used in relative layout -->
+	<string name="input_label">Please type in the account name:</string>
+	<string name="input_hint">Example:yic52</string>
+	<string name="Confirm">Confirm</string>
+	<string name="Cancel">Cancel</string>
+	
+	<!-- Strings used in table layout -->
+	<string name="user">User:</string>
+	<string name="password">Password:</string>
+	<string name="cancel">Cancel</string>
+	<string name="login">LogIn</string>
+	
+	<!-- Color names in the .xml is not directly provided in the SDK, their code should be defined in the string.xml. -->
+	<drawable name="red">#7f00</drawable>
+	<drawable name="blue">#770000ff</drawable>
+	<drawable name="green">#7700ff00</drawable>
+	<drawable name="yellow">#77ffff00</drawable>
+</resources>
