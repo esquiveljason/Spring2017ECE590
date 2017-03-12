@@ -10,9 +10,13 @@ import android.util.Log;
 
 public class Circle {
 
+    private int NUMBER_POINTS_OUTSIDE = 40;
+    private int NUMBER_POINTS_TOTAL = NUMBER_POINTS_OUTSIDE + 2;
+    private float RADIUS = 0.1f;
+
     private  int mProgram, mPositionHandle, mColorHandle, mMVPMatrixHandle ;
     private FloatBuffer mVertexBuffer;
-    private float vertices[] = new float[364 * 3];
+    private float vertices[] = new float[(NUMBER_POINTS_TOTAL ) * 3];
     float color[] = { 0.63671875f, 0.76953125f, 0.22265625f, 1.0f };
 
     private final String vertexShaderCode =
@@ -33,15 +37,19 @@ public class Circle {
         vertices[0] = 0;
         vertices[1] = 0;
         vertices[2] = 0;
+        Log.v("Thread",""+vertices[0]+","+vertices[1]+","+vertices[2]);
 
-        for(int i =1; i <364; i++){
-            vertices[(i * 3)+ 0] = (float) (0.5 * Math.cos((3.14/180) * (float)i ));
-            vertices[(i * 3)+ 1] = (float) (0.5 * Math.sin((3.14/180) * (float)i ));
-            vertices[(i * 3)+ 2] = 0;
+        int index;
+        for(int i =1; i < NUMBER_POINTS_TOTAL ; i++){
+            index = i * 3;
+            vertices[index + 0] = (float) (RADIUS * Math.cos(Math.toRadians((float)(i-1) * 360.0/NUMBER_POINTS_OUTSIDE)));
+            vertices[index + 1] = (float) (RADIUS * Math.sin(Math.toRadians((float)(i-1) * 360.0/NUMBER_POINTS_OUTSIDE)));
+            vertices[index + 2] = 0;
+            Log.v("Thread","Index"+ index+ " " + vertices[index + 0] + " , "+ vertices[index + 1] + " , " + vertices[index + 2]);
         }
 
 
-        Log.v("Thread",""+vertices[0]+","+vertices[1]+","+vertices[2]);
+
         ByteBuffer vertexByteBuffer = ByteBuffer.allocateDirect(vertices.length * 4);
         vertexByteBuffer.order(ByteOrder.nativeOrder());
         mVertexBuffer = vertexByteBuffer.asFloatBuffer();
@@ -97,7 +105,7 @@ public class Circle {
 
 
         // Draw the triangle
-        GLES20.glDrawArrays(GLES20.GL_TRIANGLE_FAN, 0, 364);
+        GLES20.glDrawArrays(GLES20.GL_TRIANGLE_FAN, 0, NUMBER_POINTS_TOTAL );
 
         // Disable vertex array
         GLES20.glDisableVertexAttribArray(mPositionHandle);
