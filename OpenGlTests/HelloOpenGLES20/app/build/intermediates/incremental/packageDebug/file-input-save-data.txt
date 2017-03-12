@@ -1,0 +1,21 @@
+#Internal package file, do not edit.
+#Sat Mar 04 19:33:33 EST 2017
+2.base=C\:\\Users\\Jason Esquivel\\Documents\\GMU\\2017Spring\\ECE590\\OpenGlTests\\HelloOpenGLES20\\app\\build\\intermediates\\res\\resources-debug.ap_
+5.file=C\:\\Users\\Jason Esquivel\\Documents\\GMU\\2017Spring\\ECE590\\OpenGlTests\\HelloOpenGLES20\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\main.xml
+5.set=ANDROID_RESOURCE
+3.base=C\:\\Users\\Jason Esquivel\\Documents\\GMU\\2017Spring\\ECE590\\OpenGlTests\\HelloOpenGLES20\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_283ec0e86ca3b89e242ea3d95f92a1b422bca732
+2.set=ANDROID_RESOURCE
+4.base=C\:\\Users\\Jason Esquivel\\Documents\\GMU\\2017Spring\\ECE590\\OpenGlTests\\HelloOpenGLES20\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_04b42878cd89c3cb45174484fc0b86c28a6e0fe0
+count=6
+0.file=C\:\\Users\\Jason Esquivel\\Documents\\GMU\\2017Spring\\ECE590\\OpenGlTests\\HelloOpenGLES20\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\ic_launcher.png
+5.base=C\:\\Users\\Jason Esquivel\\Documents\\GMU\\2017Spring\\ECE590\\OpenGlTests\\HelloOpenGLES20\\app\\build\\intermediates\\res\\resources-debug.ap_
+4.set=DEX
+1.file=C\:\\Users\\Jason Esquivel\\Documents\\GMU\\2017Spring\\ECE590\\OpenGlTests\\HelloOpenGLES20\\app\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
+1.set=ANDROID_RESOURCE
+2.file=C\:\\Users\\Jason Esquivel\\Documents\\GMU\\2017Spring\\ECE590\\OpenGlTests\\HelloOpenGLES20\\app\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
+0.base=C\:\\Users\\Jason Esquivel\\Documents\\GMU\\2017Spring\\ECE590\\OpenGlTests\\HelloOpenGLES20\\app\\build\\intermediates\\res\\resources-debug.ap_
+3.file=C\:\\Users\\Jason Esquivel\\Documents\\GMU\\2017Spring\\ECE590\\OpenGlTests\\HelloOpenGLES20\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_283ec0e86ca3b89e242ea3d95f92a1b422bca732\\classes.dex
+3.set=DEX
+1.base=C\:\\Users\\Jason Esquivel\\Documents\\GMU\\2017Spring\\ECE590\\OpenGlTests\\HelloOpenGLES20\\app\\build\\intermediates\\res\\resources-debug.ap_
+4.file=C\:\\Users\\Jason Esquivel\\Documents\\GMU\\2017Spring\\ECE590\\OpenGlTests\\HelloOpenGLES20\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_04b42878cd89c3cb45174484fc0b86c28a6e0fe0\\classes.dex
+0.set=ANDROID_RESOURCE

@@ -1,0 +1,7 @@
+#Sat Mar 11 19:47:35 EST 2017
+base.0=C\:\\Users\\Jason Esquivel\\Documents\\GMU\\2017Spring\\ECE590\\OpenGlTests\\HelloOpenGLES20\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_04b42878cd89c3cb45174484fc0b86c28a6e0fe0
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\Jason Esquivel\\Documents\\GMU\\2017Spring\\ECE590\\OpenGlTests\\HelloOpenGLES20\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_283ec0e86ca3b89e242ea3d95f92a1b422bca732\\classes.dex
+base.1=C\:\\Users\\Jason Esquivel\\Documents\\GMU\\2017Spring\\ECE590\\OpenGlTests\\HelloOpenGLES20\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_283ec0e86ca3b89e242ea3d95f92a1b422bca732
+file.0=C\:\\Users\\Jason Esquivel\\Documents\\GMU\\2017Spring\\ECE590\\OpenGlTests\\HelloOpenGLES20\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_04b42878cd89c3cb45174484fc0b86c28a6e0fe0\\classes.dex
