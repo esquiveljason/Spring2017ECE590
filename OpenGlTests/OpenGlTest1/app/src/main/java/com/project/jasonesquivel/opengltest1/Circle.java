@@ -12,7 +12,7 @@ public class Circle {
 
     private int NUMBER_POINTS_OUTSIDE = 40;
     private int NUMBER_POINTS_TOTAL = NUMBER_POINTS_OUTSIDE + 2;
-    private float RADIUS = 0.1f;
+    private float RADIUS = 0.10f;
 
     private  int mProgram, mPositionHandle, mColorHandle, mMVPMatrixHandle ;
     private FloatBuffer mVertexBuffer;
