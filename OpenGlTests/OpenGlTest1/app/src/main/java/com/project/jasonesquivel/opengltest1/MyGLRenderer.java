@@ -9,6 +9,7 @@ import android.os.SystemClock;
 import javax.microedition.khronos.opengles.GL10;
 import javax.microedition.khronos.egl.EGLConfig;
 
+import android.content.Context;
 import android.util.Log;
 
 /**
@@ -16,6 +17,9 @@ import android.util.Log;
  */
 
 public class MyGLRenderer implements GLSurfaceView.Renderer {
+    private final String TAG = "MyGLRenderer";
+
+    private Context mContext;
 
     private Triangle mTriangle;
     private Square mSquare;
@@ -28,7 +32,16 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     private final float[] mProjectionMatrix = new float[16];
     private final float[] mViewMatrix = new float[16];
 
+
+
+    public MyGLRenderer(Context context){
+        mContext = context;
+    }
+
+    @Override
     public void onSurfaceCreated(GL10 gl, EGLConfig config){
+        Log.i(TAG, "onSurfaceCreated");
+
         // Set the background frame color
         GLES20.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         // initialize a triangle
@@ -40,7 +53,10 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
     }
 
+    @Override
     public void onDrawFrame(GL10 unused) {
+        Log.i(TAG, "onDrawFrame");
+
         float[] scratch = new float[16];
         float[] mRotationMatrix = new float[16];
 
@@ -72,14 +88,19 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         mCircle.draw(mMVPMatrix);
     }
 
+    @Override
     public void onSurfaceChanged(GL10 unused, int width, int height) {
+        Log.i(TAG, "onSurfaceChanged");
+
         GLES20.glViewport(0, 0, width, height);
-        Log.i("Renderer", "Width : " + width + " Height : " + height);
+
         float ratio = (float) width / height;
 
         // this projection matrix is applied to object coordinates
         // in the onDrawFrame() method
         Matrix.frustumM(mProjectionMatrix, 0, -ratio, ratio, -1, 1, 3, 7);
+
+        Log.i(TAG, "    Width : " + width + " Height : " + height + " Ratio : " + ratio);
     }
 
     public static int loadShader(int type, String shaderCode){

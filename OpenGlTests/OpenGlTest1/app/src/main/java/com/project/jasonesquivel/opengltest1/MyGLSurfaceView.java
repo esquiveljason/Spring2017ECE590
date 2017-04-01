@@ -10,6 +10,7 @@ import android.view.MotionEvent;
  */
 
 class MyGLSurfaceView extends GLSurfaceView {
+    private final String TAG = "MyGLSurfaceView";
 
     private final MyGLRenderer mRenderer;
     private final float TOUCH_SCALE_FACTOR = 180.0f / 320;
@@ -18,11 +19,11 @@ class MyGLSurfaceView extends GLSurfaceView {
 
     public MyGLSurfaceView(Context context){
         super(context);
-
+        Log.i(TAG, "MyGLSurfaceView");
         // Create an OpenGL ES 2.0 context
         setEGLContextClientVersion(2);
 
-        mRenderer = new MyGLRenderer();
+        mRenderer = new MyGLRenderer(context);
 
         // Set the Renderer for drawing on the GLSurfaceView
         setRenderer(mRenderer);
@@ -30,7 +31,7 @@ class MyGLSurfaceView extends GLSurfaceView {
 
     @Override
     public boolean onTouchEvent (MotionEvent e) {
-
+        Log.i(TAG, "onTouchEvent");
         float x = e.getX();
         float y = e.getY();
 
@@ -53,7 +54,7 @@ class MyGLSurfaceView extends GLSurfaceView {
                 mRenderer.setAngle(
                         mRenderer.getAngle() +
                                 ((dx + dy) * TOUCH_SCALE_FACTOR));
-                Log.i("SurfaceView", "Angle : " + mRenderer.getAngle() + " X : " + x + " Y : " + y);
+                Log.i(TAG, "    Angle : " + mRenderer.getAngle() + " X : " + x + " Y : " + y);
         }
 
         mPreviousY = y;
